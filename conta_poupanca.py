@@ -1,7 +1,7 @@
 from conta import Conta
 
 class Conta_Poupanca:
-    def __init__(self, id, nome, CPF, saldo, tipo = 'Poupança', taxa_juros = 5/100):
+    def __init__(self, id, nome, CPF, saldo, tipo, taxa_juros = 5/100):
         self.taxa_juros = taxa_juros
         super().__init__(id, nome, CPF, tipo, saldo)
     
