@@ -1,10 +1,9 @@
+from clientes import Cliente
+
 class Conta: 
     def _init_(self, id, nome, CPF, tipo, saldo=0):
-        self.id = id
-        self.nome = nome
-        self.CPF = CPF
         self.saldo = saldo
-        self.tipo = tipo
+        super().__init__(id, nome, CPF, tipo)
         self.transacao = []
 
     def depositar (self):
